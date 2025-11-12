@@ -1,10 +1,10 @@
 {
   "environment": "prod",
-  "guild_id": "488405912659427358",
-  "instant_ban_channel_id": "1411480170639917219",
+  "guild_id": "1144341817467347137",
+  "instant_ban_channel_id": "1438119023656304670",
   "roles":
   {
-    "online_role": "1015751167470473311",
-    "Driver": "1015751167529201688"
+    "online_role": "",
+    "Driver": "1144352091603751062"
   }
 }
