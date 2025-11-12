@@ -48,7 +48,12 @@ func (b *Bot) Init() {
 }
 
 func (b *Bot) Run() {
-	defer b.Discord.Close()
+	defer func(Discord *discordgo.Session) {
+		err := Discord.Close()
+		if err != nil {
+
+		}
+	}(b.Discord)
 	fmt.Println("Bot is now running.  Press CTRL-C to exit.")
 	sc := make(chan os.Signal, 1)
 	signal.Notify(sc, syscall.SIGINT, syscall.SIGTERM, os.Interrupt)

@@ -38,19 +38,19 @@ func (m *GreetingsModule) GreetVerifiedUser(g *discordgo.GuildMemberUpdate) erro
 			return err
 		}
 
-		_, err = m.Bot.Discord.ChannelMessageSend(m.Config.LoungeChannelID,
+		_, err = m.Bot.Discord.ChannelMessageSend(m.Config.GeneralChannelID,
 			fmt.Sprintf("**Hello %s and welcome to ChillSynth!**", g.Mention()))
 		if err != nil {
 			return err
 		}
 
-		_, err = m.Bot.Discord.ChannelMessageSendEmbed(m.Config.LoungeChannelID, &discordgo.MessageEmbed{
+		_, err = m.Bot.Discord.ChannelMessageSendEmbed(m.Config.GeneralChannelID, &discordgo.MessageEmbed{
 			Description: fmt.Sprintf(
 				"### <:Discord_Invite:1140057489941995650> Head over to <#%s> to grab your roles \n"+
 					"### <:Discord_Message_SpeakTTS:1140059207106826271> "+
 					"And remember to **`GIVE`** <#%s> __before__ you **`ASK`** for it!",
-				m.Config.LoungeChannelID,
-				m.Config.FeedbackChannelID),
+				m.Config.GeneralChannelID,
+				m.Config.GeneralChannelID),
 			Color: 13281772,
 			Footer: &discordgo.MessageEmbedFooter{
 				Text: "If you have any questions, feel free to @ one of our moderators!",

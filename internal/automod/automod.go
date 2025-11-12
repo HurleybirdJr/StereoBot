@@ -36,13 +36,11 @@ func (m *AutoModule) MessageCheck(msg *discordgo.MessageCreate) error {
 	}
 
 	// staff is immune
-	if m.Bot.IsMemberMod(msg.Member) || m.Bot.IsMemberAdmin(msg.Member) {
+	if m.Bot.IsMemberDriver(msg.Member) {
 		return nil
 	}
 
 	switch msg.ChannelID {
-	case m.Config.DemosChannelID:
-		err = m.DemosChannelModeration(msg)
 	case m.Config.InstantBanChannelId:
 		err = m.BotAutoBanner(msg)
 	default:

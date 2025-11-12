@@ -6,24 +6,20 @@ import (
 	automoderator "stereobot/internal/automod"
 	"stereobot/internal/bot"
 	"stereobot/internal/config"
-	"stereobot/internal/events"
 	"stereobot/internal/general"
-	"stereobot/internal/greetings"
+	//"stereobot/internal/greetings"
 	"stereobot/internal/logging"
 	"stereobot/internal/reactions"
-	youtube "stereobot/internal/youtube_feed"
 
 	"github.com/bwmarrin/discordgo"
 )
 
 var modules = []bot.Module{
 	&reactions.ReactorModule{},
-	&greetings.GreetingsModule{},
-	&youtube.YoutubeFeedModule{},
+	//&greetings.GreetingsModule{},
 	&general.GeneralModule{},
 	&admin.AdminModule{},
 	&automoderator.AutoModule{},
-	&events.EventsModule{},
 }
 
 type Builder struct {

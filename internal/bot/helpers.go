@@ -20,12 +20,7 @@ func (b *Bot) DoesMemberHaveAnyRoles(memberRoles []string, checkRoles []string) 
 	})
 }
 
-func (b *Bot) IsMemberMod(member *discordgo.Member) bool {
-	modRoleId := b.Config.Roles["Mod"]
+func (b *Bot) IsMemberDriver(member *discordgo.Member) bool {
+	modRoleId := b.Config.Roles["Driver"]
 	return slices.Contains(member.Roles, modRoleId)
-}
-
-func (b *Bot) IsMemberAdmin(member *discordgo.Member) bool {
-	adminRoleId := b.Config.Roles["Admin"]
-	return slices.Contains(member.Roles, adminRoleId)
 }

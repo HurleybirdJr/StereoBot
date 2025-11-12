@@ -71,7 +71,7 @@ func (m *AutoModule) SetupInstantBanButton() error {
 			}
 
 			// staff is immune
-			if m.Bot.IsMemberMod(i.Member) || m.Bot.IsMemberAdmin(i.Member) {
+			if m.Bot.IsMemberDriver(i.Member) {
 				return
 			}
 
