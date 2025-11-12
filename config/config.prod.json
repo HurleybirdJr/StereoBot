@@ -1,43 +1,12 @@
 {
   "environment": "prod",
   "guild_id": "488405912659427358",
-  "lounge_channel_id": "488405912659427361",
-  "feedback_channel_id": "488440534449258527",
-  "demos_channel_id": "713113017302253608",
-  "event_stage_channel_id": "1037550048294223872",
-  "event_stream_channel_id": "691009984418414602",
-  "event_chat_channel_id": "807035168404930572",
-  "hangout_room_id": "543600804180000788",
   "instant_ban_channel_id": "1411480170639917219",
-  "roles": 
-    {
-      "online_role": "631849829026496543",
-      "EventHost": "691010334856577146",
-      "Mod": "806166163905839154",
-      "Admin": "804392934484606977"
-    },
-  "youtube_channels": [
-    {
-      "name": "Electronic Gems",
-      "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCPzWlhG7QM56Y8MYB3qMVnQ"
-    },
-    {
-      "name": "Polychora",
-      "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCjPLBJtP7zq16YVcT3_gmkg"
-    },
-    {
-      "name": "Definition of Chill",
-      "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCzIGoCCmSvgJgaxFFOOBJdQ"
-    },
-    {
-      "name": "Odysseus",
-      "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwoTj-pZgZZ8DInOXSSLMmA"
-    },
-    {
-      "name": "DFTI",
-      "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCHSv5KYYBSlOS340sdHK2ew"
-    }
-  ],
+  "roles":
+  {
+    "online_role": "1015751167470473311",
+    "Driver": "1015751167529201688"
+  },
   "reactions": {
     "inMessage": [
       {
